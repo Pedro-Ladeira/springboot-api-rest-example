@@ -1,5 +1,5 @@
 Pipeline CI/CD configurada com GitHub Actions
-
+  
 > 🚨 I'm working on a migration to `spring boot 3`, it's not completely done yet, but the branch is this: https://github.com/Throyer/springboot-api-rest-example/tree/spring-boot-3-migration
 > the focus is on making the experience with docker better, 100% test coverage, the rate-limit is in an nginx container and most of the configurations I tried to simplify
 
