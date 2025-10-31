@@ -1,5 +1,4 @@
 
-
 Pipeline CI/CD configurada com GitHub Actions
   
 > 🚨 I'm working on a migration to `spring boot 3`, it's not completely done yet, but the branch is this: https://github.com/Throyer/springboot-api-rest-example/tree/spring-boot-3-migration
