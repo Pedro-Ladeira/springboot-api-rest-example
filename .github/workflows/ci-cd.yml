@@ -21,7 +21,7 @@ jobs:
         distribution: 'temurin'
         
     - name: Cache Maven dependencies
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ~/.m2
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
@@ -44,7 +44,7 @@ jobs:
       working-directory: api
       
     - name: Upload JAR artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: spring-boot-app
         path: api/target/*.jar
@@ -56,12 +56,12 @@ jobs:
     
     steps:
     - name: Download artifact
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: spring-boot-app
         
     - name: Deploy to Azure Web App
-      uses: azure/webapps-deploy@v2
+      uses: azure/webapps-deploy@v3
       with:
         app-name: 'checkpoint-api-[seu-rm]'
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
